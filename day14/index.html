@@ -12,7 +12,9 @@
         text-align: center;
         padding: 20px;
         border-radius: 10px;
-        margin: 20px;
+        border:2px solid black;
+        margin: 10px ;
+
     }
    #europe {
         background-color: greenyellow;
@@ -20,33 +22,36 @@
         font-size: 24px;
         text-align: center;
         padding: 20px;
-        border-radius: 10px;
-        margin: 20px;
-    }
+        border:2px solid black;
+        margin: 10px ;
+   }
     #asia {
         background-color: lightblue;
         color: white;
         font-size: 24px;
         text-align: center;
         padding: 20px;
-        border-radius: 10px;
-        margin: 20px;
+        border:2px solid black;
+        margin: 10px ;
     }
-    .container{
-        padding:20px;
-        margin:0px;
-        border:1px solid black;
+    #container{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        padding: 20px;
+        background-color: lavenderblush;
+
     }    
     </style>
 </head>
 <body>
-    <div class="container">
+    <div id="container">
     <div id="america">div 1</div>
     <div id="europe">div 2</div>
     <div id="asia">div 3</div>
-    </div>
-    <button>click</button>
-</body>
+    <button id="button1"  onclick="addclick">click</button>
+    
     <h1>linking to javascrip</h1> 
     <header>
         <h2>info</h2>
@@ -56,7 +61,8 @@
     <h2>summary</h2>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique explicabo fuga necessitatibus ipsa, assumenda atque excepturi mollitia architecto aliquam facilis, temporibus illum debitis eveniet laudantium dolore distinctio soluta, culpa accusantium.</p>
     </header>
-</body>
+    </div>
+    </body>
 
 <script src="r.js">
     
