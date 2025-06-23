@@ -13,6 +13,11 @@ const Cricket = (props) => {
         if (runs + run >= 200) {
             alert("🎯 Target Chased!");
         }
+         if (run === 6) {
+        alert("6️⃣ Six hit!");
+    } else if (run === 4) {
+        alert("4️⃣ Four hit!");
+    }
 
         setRuns(prev => prev + run);
         updateBallCount();
@@ -31,6 +36,7 @@ const Cricket = (props) => {
     };
 
     const handleWicket = () => {
+        alert("🏏 Wicket taken!");
         if (wickets + 1 === 10) {
             alert("💥 All out");
         }
